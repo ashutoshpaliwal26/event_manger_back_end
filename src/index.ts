@@ -25,6 +25,12 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/", AuthRouter);
 
+app.get("/", (req:Request, res:Response)=>{
+    res.send({
+        success : true,
+        message : "This is a backend of the Event Manger Application"
+    })
+})
 
 // Running App on PORT 8080
 app.listen(PORT as number, "0.0.0.0", () =>
