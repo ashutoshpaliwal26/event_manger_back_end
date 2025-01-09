@@ -1,6 +1,6 @@
 {
-    "version": 2,
-    "name": "event_manger_back_end",
-    "builds": [{ "src": "dist/index.js", "use": "@vercel/node" }],
-    "routes": [{ "src": "dist/(.*)", "dest": "dist/server.js" }]
-  }
+  "version": 2,
+  "name": "event_manager_back_end",
+  "builds": [{ "src": "dist/index.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "dist/index.js" }]
+}
